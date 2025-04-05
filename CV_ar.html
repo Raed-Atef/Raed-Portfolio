@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>السيرة الذاتية - رائد عاطف أبو الفتوح</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      text-align: right;
+    }
+
+    h1 {
+      color: #007bff;
+      text-align: center;
+    }
+
+    .subtitle {
+      color: #000;
+      font-size: 18px;
+      font-weight: normal;
+      text-align: center;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+      margin-top: 10px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 10px;
+    }
+
+    .section h2 {
+      color: #007bff;
+      text-align: right;
+      margin: 0;
+      cursor: pointer;
+      user-select: none;
+      padding: 10px 0;
+    }
+
+    .content {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .list-item {
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+
+    .sublist {
+      margin-right: 40px;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .sublist-item {
+      margin: 5px 0;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .container {
+        width: 95%;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>رائد عاطف أبو الفتوح محمد عبدالله</h1>
+  <div class="subtitle">معلم تربية بدنية</div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">البيانات الشخصية</h2>
+    <div class="content">
+      <ul>
+        <li class="list-item">تاريخ الميلاد: 01 / 09 / 1989</li>
+        <li class="list-item">الرقم القومي: 28909011304731</li>
+        <li class="list-item">الجنسية: مصري</li>
+        <li class="list-item">محل الإقامة: الزقازيق، الشرقية، مصر</li>
+        <li class="list-item">الحالة الاجتماعية: متزوج</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">السمات الشخصية</h2>
+    <div class="content">
+      <ul>
+        <li class="list-item">المستوى الثقافي: جيد جدًا</li>
+        <li class="list-item">مستوى اللياقة البدنية: ممتاز</li>
+        <li class="list-item">مستوى الذكاء العام: 153 (IQ)</li>
+        <li class="list-item">المظهر العام: جيد جدًا</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">التعليم والتدريب</h2>
+    <div class="content">
+      <ul>
+        <li class="list-item">بكالوريوس التربية الرياضية، كلية التربية الرياضية جامعة الزقازيق (مايو 2011)</li>
+        <li class="list-item">دورة التنمية البشرية للمجال الرياضي، نقابة المهن الرياضية (مارس 2010)</li>
+        <li class="list-item">دورات إعداد قادة - معهد إعداد القادة:
+          <ul class="sublist">
+            <li class="sublist-item">فرع السويس (أغسطس 2008)</li>
+            <li class="sublist-item">فرع بورسعيد (يوليو 2009)</li>
+            <li class="sublist-item">فرع الفيوم (يوليو 2010)</li>
+            <li class="sublist-item">فرع بورسعيد (يوليو 2010)</li>
+            <li class="sublist-item">فرع الإسكندرية (أغسطس 2010)</li>
+          </ul>
+        </li>
+        <li class="list-item">دورة تقنين الأحمال التدريبية، كلية التربية الرياضية جامعة الزقازيق والأكاديمية العربية لعلوم التربية الرياضية (فبراير 2012)</li>
+        <li class="list-item">دورة إعداد مدرب أندية صحية، كلية التربية الرياضية جامعة الزقازيق والأكاديمية العربية لعلوم التربية الرياضية (فبراير 2012)</li>
+        <li class="list-item">دورة غواص مبتدئ "نجمة أولى"، الاتحاد المصري للغوص والإنقاذ (مارس 2013)</li>
+        <li class="list-item">دورة غواص متقدم "نجمة ثانية"، الاتحاد المصري للغوص والإنقاذ (مارس 2013)</li>
+        <li class="list-item">دورة الإسعافات "EFR - PADI"، منظمة بادي لمحترفي الغوص (أبريل 2013)</li>
+        <li class="list-item">دورة معلم السباحة والسلامة في الماء، الاتحاد المصري للغوص والإنقاذ (أبريل 2013)</li>
+        <li class="list-item">دورة إنقاذ الغرقى والإسعافات الأولية، الاتحاد المصري للغوص والإنقاذ (أبريل 2013)</li>
+        <li class="list-item">دورة الإصابات الرياضية والتأهيل، الأكاديمية الدولية للعلوم التطبيقية (أبريل 2013)</li>
+        <li class="list-item">دورة التدليك الرياضي، الأكاديمية الدولية للعلوم التطبيقية (أبريل 2013)</li>
+        <li class="list-item">دورة الإسعافات الأولية، الأكاديمية الدولية للعلوم التطبيقية (أبريل 2013)</li>
+        <li class="list-item">إجازة التدريس بالمملكة العربية السعودية، إدارة التعليم بمكة المكرمة (أكتوبر 2014)</li>
+        <li class="list-item">دورة أساليب التدريس بالمملكة العربية السعودية، إدارة التعليم بمكة المكرمة (أكتوبر 2014)</li>
+        <li class="list-item">دورة كلاسيرا للتعليم عن بعد، مدرسة الفرقان الأهلية بمكة المكرمة (أكتوبر 2017)</li>
+        <li class="list-item">دورة الإسعافات الأولية، الهلال الأحمر السعودي (فبراير 2020)</li>
+        <li class="list-item">دورة مكافحة العدوى، الهلال الأحمر السعودي (أبريل 2020)</li>
+        <li class="list-item">دورة التعليم عن بعد، إدارة التربية البدنية والتعليم الأهلي بمكة المكرمة (ديسمبر 2020)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">الشهادات والتكريم</h2>
+    <div class="content">
+      <ul>
+        <li class="list-item">المجال الرياضي:
+          <ul class="sublist">
+            <li class="sublist-item">المركز الثاني - سباق 5000 متر جري، بطولة جامعة الزقازيق (2007)</li>
+            <li class="sublist-item">المركز الأول - سباق 1500 متر جري، بطولة جامعة الزقازيق (2008)</li>
+            <li class="sublist-item">المركز الثالث - سباق 5000 متر جري، أولمبياد الجامعات المصرية (2008)</li>
+            <li class="sublist-item">المركز الأول - سباق 5000 متر جري، بطولة جامعة الزقازيق (2009)</li>
+            <li class="sublist-item">المركز الرابع - سباق اختراق الضاحية 8000 متر، جامعة سيناء (2008)</li>
+            <li class="sublist-item">المركز الثاني - سباق اختراق الضاحية 8000 متر، جامعة سيناء (2010)</li>
+            <li class="sublist-item">المركز الثالث - تايكوندو، وزن 62، بطولة جامعة الزقازيق (2008)</li>
+            <li class="sublist-item">المركز الثالث - تايكوندو، وزن 68، بطولة جامعة الزقازيق (2010)</li>
+            <li class="sublist-item">تكريم عن الفوز ببطولة إدارة مكة المكرمة التعليمية للسباحة - مدرب (2019)</li>
+          </ul>
+        </li>
+        <li class="list-item">المجال الثقافي:
+          <ul class="sublist">
+            <li class="sublist-item">المركز الثاني - كتابة القصة القصيرة، جامعة الزقازيق (2009)</li>
+            <li class="sublist-item">المركز الأول - كتابة القصة القصيرة، جامعة الزقازيق (2010)</li>
+            <li class="sublist-item">المركز الأول - كتابة المقال، جامعة أسيوط، ملتقى طلاب الجامعات المصرية (2011)</li>
+            <li class="sublist-item">المركز الأول - إلقاء الشعر، جامعة الزقازيق (2011)</li>
+            <li class="sublist-item">تكريم المعلم المثالي بمدرسة الفرقان الأهلية القسم الأمريكي (2016-2018)</li>
+            <li class="sublist-item">تكريم المرشد الصحي، إدارة التعليم الأهلي بمكة المكرمة (2019)</li>
+            <li class="sublist-item">تكريم يوم المعلم، مدرسة الفضل بن العباس الثانوية بمكة المكرمة (2021)</li>
+          </ul>
+        </li>
+        <li class="list-item">المجال الكشفي:
+          <ul class="sublist">
+            <li class="sublist-item">المركز الأول - جوال مثالي، مهرجان الكشفي والإرشادي، جامعة الزقازيق (2009)</li>
+            <li class="sublist-item">المركز الأول - جوال مثالي، مهرجان الصداقة لجوالين، كلية الطب البيطري (2009)</li>
+            <li class="sublist-item">تكريم النشاط الكشفي بمدرسة الفرقان الأهلية القسم الأمريكي (2015)</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">المهارات</h2>
+    <div class="content">
+      <ul>
+        <li class="list-item">اللغة الإنجليزية: جيد</li>
+        <li class="list-item">استخدام الحواسب الآلية: جيد جدًا</li>
+        <li class="list-item">الاقناع: جيد جدًا</li>
+        <li class="list-item">التواصل: جيد جدًا</li>
+        <li class="list-item">العرض: جيد جدًا</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">الهوايات</h2>
+    <div class="content">
+      <p>السباحة – الجري – التخييم – الشطرنج – القراءة – الكتابة – الكمبيوتر والإنترنت</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">مميزات شخصية</h2>
+    <div class="content">
+      <ul>
+        <li class="list-item">القدرة على العمل لفترات طويلة ومتواصلة</li>
+        <li class="list-item">القدرة على العمل في ظروف مختلفة</li>
+        <li class="list-item">ابتكار وسائل وأدوات وطرق جديدة</li>
+        <li class="list-item">العمل مع الأفراد ذوي الاحتياجات الخاصة</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">الخبرة</h2>
+    <div class="content">
+      <p>12 عام في مجال التدريس (تربية بدنية وسباحة)</p>
+      <ul>
+        <li class="list-item">3 أعوام تدريس للمرحلة الابتدائية والإعدادية لغات في مصر</li>
+        <li class="list-item">عامان تدريس للدبلومة الأمريكية في الإمارات العربية المتحدة</li>
+        <li class="list-item">5 أعوام تدريس للدبلومة الأمريكية بالمملكة العربية السعودية</li>
+        <li class="list-item">عامان تدريس المسار المصري لغات بالمملكة العربية السعودية</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">الهدف</h2>
+    <div class="content">
+      <p>إيجاد تحديات جديدة لتطوير مجال التربية الرياضية مع تحقيق مستوى مهني راقٍ.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 onclick="toggleContent(this)">بيانات الاتصال</h2>
+    <div class="content">
+      <ul>
+        <li class="list-item">العنوان: كفر جمعة، الزقازيق، الشرقية، مصر</li>
+        <li class="list-item">ت. محمول & واتساب: 00201021385340</li>
+        <li class="list-item">البريد الإلكتروني: <a href="mailto:Major.Raed9@gmail.com">Major.Raed9@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function toggleContent(header) {
+    const content = header.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صور الشهادات</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .gallery-container {
+      max-width: 80%;
+      max-height: 80%;
+      text-align: center;
+      position: relative;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .prev, .next {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 15px;
+      cursor: pointer;
+      border: none;
+      font-size: 24px;
+      border-radius: 5px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .prev {
+      border-radius: 50%;
+      left: 20px;
+    }
+
+    .next {
+      border-radius: 50%;
+      right: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-container {
+        max-width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="gallery-container">
+  <div class="image-container">
+    <img id="certificateImage" src="https://github.com/Raed-Atef/Certificates/raw/main/1.jpg" alt="Certificate 1">
+  </div>
+  <div class="buttons">
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+</div>
+
+<script>
+  const totalImages = 28; // إجمالي عدد الصور
+  let currentImageIndex = 1;
+
+  function changeImage(direction) {
+    currentImageIndex += direction;
+
+    if (currentImageIndex < 1) {
+      currentImageIndex = totalImages;
+    } else if (currentImageIndex > totalImages) {
+      currentImageIndex = 1;
+    }
+
+    const imageUrl = `https://github.com/Raed-Atef/Certificates/raw/main/${currentImageIndex}.jpg`;
+    document.getElementById('certificateImage').src = imageUrl;
+  }
+</script>
+
+</body>
+</html>
